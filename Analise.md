@@ -8,12 +8,12 @@ Google Colab
 
 ## 📋 **Descrição do Processo:**
 
-* PARTE 1 – Leitura e Renomeação
-* PARTE 2 – Filtrar apenas os anos desejados
-* PARTE 3 – Soma total de valores por país
-* PARTE 4 – Criar o gráfico de linha com os 5 maiores que mais importaram vinhos do Brasil 
-* PARTE 5 – Criar gráfico para análise de correlação (Valor venda X Volume exportado)
-* PARTE 6 – Criar gráficos para análise de outliers (Valores que estão acima da média histórica)
+1. PARTE 1 – Leitura e Renomeação
+2. PARTE 2 – Filtrar apenas os anos desejados
+3. PARTE 3 – Soma total de valores por país
+4. PARTE 4 – Criar o gráfico de linha com os 5 maiores que mais importaram vinhos do Brasil 
+5. PARTE 5 – Criar gráfico para análise de correlação (Valor venda X Volume exportado)
+6. PARTE 6 – Criar gráficos para análise de outliers (Valores que estão acima da média histórica)
 
 
 
