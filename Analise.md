@@ -19,6 +19,7 @@ Google Colab
 ## 💻 **Comandos em python para a leitura do arquivo `ExpVinho.csv` utilizando o Google Colab**: 
 
 🧠 PARTE 1 – Leitura e Renomeação
+```
 df = pd.read_csv('/content/ExpVinho (1).csv', sep='\t')
 
 #Lê o arquivo CSV usando tabulação (\t) como separador, pois o arquivo não usa vírgula.
@@ -48,7 +49,7 @@ for i in range(0, len(anos), 2):
 df.columns = novos_nomes
 #Aplica os novos nomes de colunas ao DataFrame original.
 
-
+```
 
 
 🔍 PARTE 2 – Filtrar apenas os anos desejados
