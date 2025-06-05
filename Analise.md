@@ -1,7 +1,6 @@
 ## 📖 **Descrição do Projeto:**
 Panorama das Exportações de Vinhos Brasileiros dos últimos 15 anos (2009 - 2023): Evolução Histórica, Desafios e Caminhos Futuros.
-Abaixo estão os comandos em python que foram utilizados no decorrer do relatório e anexo está o arquivo do relatório como arquivo de análise.
-
+Abaixo estão os comandos em python que foram utilizados no decorrer do relatório e anexo `Readme.md`
 
 ## 🛠️ Ferramentas Utilizadas:
 Google Colab
@@ -9,13 +8,12 @@ Google Colab
 
 ## 📋 **Descrição do Processo:**
 
-###RELATÓRIO - Análise de dados (Arquivo PDF)
-###PARTE 1 – Leitura e Renomeação
-###PARTE 2 – Filtrar apenas os anos desejados
-###PARTE 3 – Soma total de valores por país
-###PARTE 4 – Criar o gráfico de linha com os 5 maiores que mais importaram vinhos do Brasil 
-###PARTE 5 – Criar gráfico para análise de correlação (Valor venda X Volume exportado)
-###PARTE 6 – Criar gráficos para análise de outliers (Valores que estão acima da média histórica)
+* PARTE 1 – Leitura e Renomeação
+* PARTE 2 – Filtrar apenas os anos desejados
+* PARTE 3 – Soma total de valores por país
+* PARTE 4 – Criar o gráfico de linha com os 5 maiores que mais importaram vinhos do Brasil 
+* PARTE 5 – Criar gráfico para análise de correlação (Valor venda X Volume exportado)
+* PARTE 6 – Criar gráficos para análise de outliers (Valores que estão acima da média histórica)
 
 
 
