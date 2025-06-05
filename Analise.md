@@ -1,6 +1,6 @@
 ## 📖 **Descrição do Projeto:**
 Panorama das Exportações de Vinhos Brasileiros dos últimos 15 anos (2009 - 2023): Evolução Histórica, Desafios e Caminhos Futuros.
-Abaixo estão os comandos em python que foram utilizados no decorrer do relatório e anexo `Readme.md`
+Abaixo estão os comandos em python que foram utilizados no decorrer do relatório que está no arquivo: `Readme.md`
 
 ## 🛠️ Ferramentas Utilizadas:
 Google Colab
