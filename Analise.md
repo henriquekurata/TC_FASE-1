@@ -114,7 +114,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 #Adiciona rótulos, legenda, grade, rotação do eixo X e exibe o gráfico.
-
+```
 
 
 📈 PARTE 5 – Criação de gráfico para análise de correlação (Valor venda X Volume exportado)
@@ -179,6 +179,7 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
 ```
 
 
