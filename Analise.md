@@ -1,10 +1,11 @@
 ## 📖 **Descrição do Projeto:**
-
+Panorama das Exportações de Vinhos Brasileiros: Evolução Histórica, Desafios e Caminhos Futuros
 
 ## Principais Funcionalidades:
 
 
 ## 🛠️ Ferramentas Utilizadas:
+Google Colab
 
 
 ## 📋 **Descrição do Processo:**
@@ -15,35 +16,37 @@
 
 
 
-## 💻 **Comandos:** 
+## 💻 **Comandos em python para a leitura do arquivo `ExpVinho.csv` utilizando o Google Colab**: 
 
 🧠 PARTE 1 – Leitura e Renomeação
 df = pd.read_csv('/content/ExpVinho (1).csv', sep='\t')
-➡️ Lê o arquivo CSV usando tabulação (\t) como separador, pois seu arquivo não usa vírgula.
+
+#Lê o arquivo CSV usando tabulação (\t) como separador, pois o arquivo não usa vírgula.
 
 
 colunas_originais = df.columns.tolist()
-➡️ Cria uma lista com todos os nomes de colunas do arquivo original.
+
+#Cria uma lista com todos os nomes de colunas do arquivo original.
 
 
 novos_nomes = colunas_originais[:2]  # ['Id', 'País']
 anos = colunas_originais[2:]
-➡️ Guarda os dois primeiros nomes ("Id", "País") que não precisam mudar
-➡️ A variável anos contém todas as colunas numéricas (ex: '1970', '1970.1', '1971', etc.)
+
+#Guarda os dois primeiros nomes ("Id", "País") que não precisam mudar
+#A variável anos contém todas as colunas numéricas (ex: '1970', '1970.1', '1971', etc.)
 
 for i in range(0, len(anos), 2):
     ano = anos[i].split('.')[0]
     novos_nomes.append(f"{ano}_kg")
     novos_nomes.append(f"{ano}_valor")
-➡️ Esse for percorre a lista de anos, de 2 em 2 colunas, pois cada ano aparece 2 vezes (uma para kg e outra para valor).
 
-split('.')[0] remove sufixos como .1, .2, que o pandas usa para diferenciar colunas com nomes duplicados
-
-Ele cria nomes como 2009_kg, 2009_valor, 2010_kg, 2010_valor, etc.
+#Esse for percorre a lista de anos, de 2 em 2 colunas, pois cada ano aparece 2 vezes (uma para kg e outra para valor).
+#split('.')[0] remove sufixos como .1, .2, que o pandas usa para diferenciar colunas com nomes duplicados
+#Ele cria nomes como 2009_kg, 2009_valor, 2010_kg, 2010_valor, etc.
 
 
 df.columns = novos_nomes
-➡️ Aplica os novos nomes de colunas ao DataFrame original.
+#Aplica os novos nomes de colunas ao DataFrame original.
 
 
 
