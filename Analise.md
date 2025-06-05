@@ -183,7 +183,7 @@ O gráfico acima evidencia um crescimento significativo e consistente das export
 Esse comportamento pode ser explicado por diversos fatores estruturais:
 
 🟢 1. Consolidação do Paraguai como principal destino do vinho brasileiro
-Desde 2018, o Paraguai assumiu o posto de maior comprador de vinhos do Brasil. Segundo a Ibravin e o projeto Wines of Brasil, o país foi responsável por quase 80% das exportações de vinho tranquilo em 2021.
+Desde 2018, o Paraguai assumiu o posto de maior comprador de vinhos do Brasil. Segundo a Ibravin e o projeto Wines of Brasil, o país foi responsável por quase 80% das exportações de vinho em 2021.
 
 🟢 2. Estratégia de exportação e promoção comercial ativa
 A partir de 2018, o Brasil ampliou sua atuação no mercado paraguaio por meio de:
@@ -214,36 +214,6 @@ O crescimento das exportações para o Paraguai a partir de 2018 não é um outl
 
 
 
-📈 Crescimento das Exportações de Vinho do Brasil para o Paraguai
-A partir de 2018, o Paraguai se consolidou como o principal destino das exportações de vinhos tranquilos do Brasil. Em 2021, o país representou 79% das exportações de vinhos tranquilos brasileiros, com um crescimento de 190% em volume e 209% em valor em comparação com o ano anterior .
-
-🔍 Fatores Contribuintes para o Crescimento
-1. Proximidade Geográfica e Logística Favorável
-A proximidade entre o Brasil e o Paraguai facilita o comércio entre os dois países. O Paraguai serve como uma plataforma estratégica para a distribuição de produtos brasileiros para outros mercados da América Latina .
-
-2. Ações de Promoção Comercial
-O projeto setorial Wines of Brasil, realizado em parceria entre o Instituto Brasileiro do Vinho (Ibravin) e a Agência Brasileira de Promoção de Exportações e Investimentos (Apex-Brasil), tem desempenhado um papel crucial na promoção dos vinhos brasileiros no mercado paraguaio. Desde 2002, o projeto tem apoiado vinícolas brasileiras na exportação de seus produtos, incluindo ações de capacitação e consolidação da imagem dos rótulos nacionais no exterior .
-
-3. Aumento na Produção e Qualidade dos Vinhos Brasileiros
-A melhoria na qualidade dos vinhos brasileiros, aliada a uma produção crescente, tem atraído mais consumidores no Paraguai. A safra de 2020, por exemplo, foi considerada excelente, o que contribuiu para a oferta de produtos de maior qualidade .
-
-4. Câmbio Favorável
-A desvalorização do real frente ao dólar tem tornado os vinhos brasileiros mais competitivos no mercado internacional, incluindo o paraguaio. Isso tem incentivado importadores a adquirir mais produtos brasileiros devido ao custo-benefício atrativo .
-
-📊 Conclusão
-O aumento nas exportações de vinho do Brasil para o Paraguai a partir de 2018 pode ser atribuído a uma combinação de fatores, incluindo proximidade geográfica, ações de promoção comercial eficazes, melhoria na qualidade dos produtos e condições cambiais favoráveis. Esses elementos têm contribuído para consolidar o Paraguai como o principal destino das exportações de vinhos brasileiros.
-
-
-https://revistaadega.uol.com.br/artigo/analise-exportacoes-de-vinhos-brasileiros-crescem-52-em-valor-de-janeiro-setembro-de-2021-o-que-isto-quer-dizer_13472
-
-https://blogs.oglobo.globo.com/lauro-jardim/post/paraguai-e-o-maior-importador-de-vinho-brasileiro.html
-
-
-https://www.vinhospelomundo.com/vinhos-e-espumantes-brasileiros-cre?utm_source
-
-https://engarrafadormoderno.com.br/mercado/exportacoes-de-vinhos-e-espumantes-crescem-mais-de-60?utm_source
-
-https://agroemdia.com.br/2022/01/20/exportacoes-brasileiras-de-vinho-aumentam-8325-em-2021/?utm_source
 
 
 📈 Aumento nas Exportações de Vinho Brasileiro para a Rússia em 2013
