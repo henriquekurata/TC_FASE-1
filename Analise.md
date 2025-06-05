@@ -20,8 +20,9 @@ PARTE 5 – Criar gráfico para análise de correlação (Valor venda X Volume e
 PARTE 6 – Criar gráficos para análise de outliers (Valores que estão acima da média histórica)
 
 
-### **Relatório**: 
-Introdução
+# **Relatório**: 
+
+***Introdução**
 
 O setor vinícola brasileiro tem ganhado destaque no cenário internacional, com o país ampliando sua presença em mercados estrangeiros ao longo dos últimos anos. Este relatório tem como objetivo analisar a evolução das exportações de vinhos do Brasil entre 2009 e 2023, com base nos dados extraídos do portal oficial da Embrapa Uva e Vinho (EMBRAPA, 2024).
 Inicialmente, será apresentado um gráfico geral com os principais países importadores de vinho brasileiro nos últimos 15 anos, a fim de identificar padrões e mudanças na dinâmica das exportações. Em seguida, o estudo se concentrará em uma análise aprofundada dos dois mercados economicamente mais relevantes no período, explorando as tendências temporais das exportações brasileiras de vinho.
@@ -33,13 +34,12 @@ As conclusões derivadas dessas análises visam compreender melhor as dinâmicas
 
 
 
-
-
-Principais Destinos dos Vinhos Brasileiros
+***Principais Destinos dos Vinhos Brasileiros**
 
 1.	Evolução do valor exportado por país (2009-2023):
 Abaixo está o gráfico temporal com os cinco países que mais importaram vinhos brasileiros entre 2009 e 2023. Destacam-se, nesse período, o Paraguai e a Rússia, que apresentaram desempenhos superiores em relação aos demais destinos.
- 
+
+***PARTE 4 – Criar o gráfico de linha com os 5 maiores que mais importaram vinhos do Brasil***
 Gráfico 1: Evolução do valor exportado por país 2009-2023 (EMBRAPA, 2024)
 
 Diante desses dados, será realizada uma análise mais aprofundada para ambos os países, com destaque para o pico nas exportações à Rússia em 2013 e para o crescimento constante do Paraguai a partir de 2016.
