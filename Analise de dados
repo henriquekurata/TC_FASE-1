@@ -1,0 +1,145 @@
+# =========================
+# IMPORTS
+# =========================
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# =========================
+# PARTE 1 – LEITURA E RENOMEAÇÃO
+# =========================
+df = pd.read_csv('/content/ExpVinho.csv', sep='\t')
+
+colunas_originais = df.columns.tolist()
+
+novos_nomes = colunas_originais[:2]
+anos = colunas_originais[2:]
+
+for i in range(0, len(anos), 2):
+    ano = anos[i].split('.')[0]
+    novos_nomes.append(f"{ano}_kg")
+    novos_nomes.append(f"{ano}_valor")
+
+df.columns = novos_nomes
+
+# =========================
+# PARTE 2 – FILTRO DE ANOS
+# =========================
+anos_desejados = [str(ano) for ano in range(2009, 2024)]
+
+colunas_mantidas = ['Id', 'País']
+for ano in anos_desejados:
+    colunas_mantidas.append(f"{ano}_kg")
+    colunas_mantidas.append(f"{ano}_valor")
+
+df_filtrado = df[colunas_mantidas]
+
+# =========================
+# PARTE 3 – TOP 5 PAÍSES
+# =========================
+colunas_valor = [f"{ano}_valor" for ano in anos_desejados]
+
+df_filtrado["total_USD"] = df_filtrado[colunas_valor].sum(axis=1)
+
+top_paises = df_filtrado.sort_values(by="total_USD", ascending=False).head(5)
+
+# =========================
+# PARTE 4 – GRÁFICO LINHA
+# =========================
+plt.figure(figsize=(14, 7))
+
+for _, row in top_paises.iterrows():
+    valores = [row[f"{ano}_valor"] for ano in anos_desejados]
+    plt.plot(anos_desejados, valores, marker='o', label=row['País'])
+
+plt.title('Evolução do Valor Exportado por País (2009–2023)')
+plt.xlabel('Ano')
+plt.ylabel('Valor em US$')
+plt.legend(title='País')
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+# =========================
+# PARTE 5 – CORRELAÇÃO
+# =========================
+df_corr_base = df_filtrado.copy()
+
+# Criar valor por kg
+for ano in anos_desejados:
+    df_corr_base[f"{ano}_USD_per_kg"] = (
+        df_corr_base[f"{ano}_valor"] / df_corr_base[f"{ano}_kg"]
+    )
+
+dados_plot = []
+
+df_corr_filtrado = df_corr_base[df_corr_base['País'].isin(['Rússia', 'Paraguai'])]
+
+for _, row in df_corr_filtrado.iterrows():
+    pais = row['País']
+    for ano in range(2009, 2024):
+        kg = row[f"{ano}_kg"]
+        valor_kg = row[f"{ano}_USD_per_kg"]
+
+        if kg > 0:
+            dados_plot.append({
+                'País': pais,
+                'Ano': ano,
+                'Quantidade_kg': kg,
+                'Valor_USD_por_kg': valor_kg
+            })
+
+df_corr = pd.DataFrame(dados_plot)
+
+plt.figure(figsize=(10, 6))
+
+for pais in df_corr['País'].unique():
+    df_p = df_corr[df_corr['País'] == pais]
+
+    plt.scatter(df_p['Quantidade_kg'], df_p['Valor_USD_por_kg'], label=pais, alpha=0.7)
+
+    x = df_p['Quantidade_kg']
+    y = df_p['Valor_USD_por_kg']
+
+    if len(x) > 1:
+        coef = np.polyfit(x, y, 1)
+        poly1d_fn = np.poly1d(coef)
+        plt.plot(sorted(x), poly1d_fn(sorted(x)), linestyle='--')
+
+plt.xlabel('Quantidade exportada (kg)')
+plt.ylabel('Valor por kg (US$)')
+plt.title('Correlação entre quantidade exportada e valor por kg')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# =========================
+# PARTE 6 – OUTLIERS (RÚSSIA E PARAGUAI)
+# =========================
+def plot_outliers(pais_nome):
+    dados_pais = df_filtrado[df_filtrado['País'] == pais_nome].iloc[0]
+
+    anos = list(range(2009, 2024))
+    valores = [dados_pais[f"{ano}_valor"] for ano in anos]
+
+    media = sum(valores) / len(valores)
+
+    plt.figure(figsize=(10, 5))
+    plt.scatter(anos, valores, s=80)
+
+    plt.axhline(y=media, linestyle='--', linewidth=1, label=f'Média: {media:,.0f} US$')
+
+    plt.title(f'Exportações para {pais_nome} (2009–2023)')
+    plt.xlabel('Ano')
+    plt.ylabel('Valor (US$)')
+    plt.xticks(anos, rotation=45)
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
+# Rodar para os dois países
+plot_outliers('Rússia')
+plot_outliers('Paraguai')
