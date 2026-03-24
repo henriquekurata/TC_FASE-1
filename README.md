@@ -17,13 +17,14 @@ O objetivo é transformar dados brutos em **insights estratégicos**, utilizando
 ---
 
 ## 📂 Estrutura do Projeto
-TC_FASE-1/
-│
-├── analise_vinhos.ipynb # Notebook principal (Google Colab)
-├── README.md # Documentação do projeto
-├── ExpVinho.csv # Base de dados
-├── Analise.md # Scripts e explicações técnicas
-└── Tech_Challenge-Fase 1.pdf # Relatório final
+
+| Arquivo | Descrição |
+|--------|----------|
+| analise_vinhos.ipynb | Notebook principal |
+| ExpVinho.csv | Base de dados |
+| Analise.md | Scripts técnicos |
+| README.md | Documentação |
+| Tech_Challenge-Fase 1.pdf | Relatório final |
 
 
 ---
