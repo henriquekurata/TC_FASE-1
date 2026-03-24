@@ -20,9 +20,8 @@ O objetivo é transformar dados brutos em **insights estratégicos**, utilizando
 
 | Arquivo | Descrição |
 |--------|----------|
-| analise_vinhos.ipynb | Notebook principal |
+| analise_de_dados.ipynb | Notebook principal |
 | ExpVinho.csv | Base de dados |
-| Analise.md | Scripts técnicos |
 | README.md | Documentação |
 | Tech_Challenge-Fase 1.pdf | Relatório final |
 
